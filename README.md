@@ -108,3 +108,10 @@ join purchases using (purchase_id)
 join credit_cards using (credit_card_id)
 join users using (user_id)
 ```
+or another way
+```SQL
+select user_name, email, credit_card_number, purchase_date, inventory_item_name from credit_cards
+join users using (user_id)
+join purchases using(credit_card_id)
+join inventory_items using (purchase_id);
+```
