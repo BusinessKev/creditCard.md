@@ -37,7 +37,8 @@ VALUES
     ('3333444455556666', 4),
     ('4444555566667777', 5);
 ```
-```SQLCREATE table purchases (
+```SQL
+CREATE table purchases (
         purchase_id INTEGER PRIMARY KEY,
         purchase_date DATE,
         credit_card_id INTEGER NOT NULL,
