@@ -72,6 +72,7 @@ VALUES
     ('Spoon', 3),
     ('Flash Light', 4),
     ('Watch', 5);
+```
 ```SQL
 select user_name, email, credit_card_number, purchase_date, inventory_items_name from inventory_items
 join purchases using (purchase_id)
