@@ -106,7 +106,7 @@ JOIN users USING (user_id);
 select user_name, email, credit_card_number, purchase_date, inventory_items_name from inventory_items
 join purchases using (purchase_id)
 join credit_cards using (credit_card_id)
-join users using (user_id)
+join users using (user_id);
 ```
 or another way
 ```SQL
