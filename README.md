@@ -74,12 +74,6 @@ VALUES
     ('Watch', 5);
 ```
 ```SQL
-select user_name, email, credit_card_number, purchase_date, inventory_items_name from inventory_items
-join purchases using (purchase_id)
-join credit_cards using (credit_card_id)
-join users using (user_id)
-```
-```SQL
 CREATE table numbers (
         number_id integer primary key,
         number integer not null unique,
@@ -101,8 +95,15 @@ VALUES
         (8, 1),
         (9, 0);
 ```
+# query
 ```SQL
 SELECT user_name, email, credit_card_number 
 FROM credit_cards
 JOIN users USING (user_id);
+```
+```SQL
+select user_name, email, credit_card_number, purchase_date, inventory_items_name from inventory_items
+join purchases using (purchase_id)
+join credit_cards using (credit_card_id)
+join users using (user_id)
 ```
